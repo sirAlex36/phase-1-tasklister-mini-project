@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
 const addElement=document.querySelector('#create-task-form')
 const tasklist=document.querySelector('#tasks')
 
+
 addElement.addEventListener("submit",function(event){
 event.preventDefault() 
   
@@ -18,6 +19,7 @@ if(taskstodo !==""){
   deleteBtn.textContent='X'
   deleteBtn.style.marginLeft="10px"
 
+
   deleteBtn.addEventListener("click" ,() => {
     ul.remove() })
  
@@ -26,9 +28,7 @@ if(taskstodo !==""){
 
   imput.value = "";
   }
-  
- 
-})
+  })
 
 });
 
